@@ -18,7 +18,7 @@
     <nav>
       <ul class="lista-menu">
         <li><a href="#formacao">Formação</a> </li>
-        <li><a href="#portifolio">Portfólio</a></li>
+        <li><a href="#portifolio">Licenças e certificados</a></li>
         <li><a href="#contato">Contatos</a></li>
       </ul>
     </nav>
@@ -37,8 +37,7 @@
         </div>
         <div>
           <p class="texto-sobre">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. In hac habitasse platea dictumst. Nulla facilisi. Nulla id luctus tortor, id hendrerit
-            metus. Donec vulputate tellus sed sollicitudin porta. Aliquam turpis leo, pellentesque et velit a, sagittis scelerisque quam. Suspendisse imperdiet molestie leo. Proin sed imperdiet erat, UTF-8
+            Há 3 anos desbravando esse gigantesto mundo da tecnologia, afinal, migrar de área depois dos 30+ não é facil, mas é possível, e eu consegui! Sou uma pessoa muito dedicada e, como em tudo que me proponho a fazer dou o meu melhor, com a tecnologia não seria diferente. São anos de dedicação total entre alguns cursos, faculdade e trabalho. Estou totalmente satisfeita e grata por tudo o que trabalhar com tecnologia tem me proporcionado. Conheci pessoas incríveis e talentosas que deram total apoio e forças para continuar, inclusive no Minas Programam! E posso dizer que sigo cheia de energia e garra para continuar aprendendo muito mais e compartilhar todo o meu conhecimento. E que venham os novos desafios!
           </p>
         </div>
       </article>
@@ -51,21 +50,22 @@
           <h3 class="topico-principal">Formação</h3>
         </div>
 
-        <div>
-          <ul class="lista-item">
+        <div class="lista-item">
+          <ul>
             <li>
-              <p>Introdução Tecnológica</p>
-              <a href="https://minasprogramam.com/" target="_blank" >Minas Programam</a>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.
+              <p class="lista-titulo">Introdução à Programação.</p>
+              <a href="https://minasprogramam.com/" target="_blank" class="lista-local">Minas Programam</a>
+              <p class="lista-descricao">
+                - Curso de introdução a programação focado em desenvolvimento Front-end.
               </p>
             </li>
 
             <li>
-              <p>Analise e desenvolvimento de sistemas</p>
-              <a href="https://www.ifsp.edu.br/" target="_blank">IFSP</a>
-              <p >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.
+              <!--<p>Analise e desenvolvimento de sistemas</p>*/ -->
+              <p class="lista-titulo">Gestão da Tecnologia da Informação.</p>
+              <a href="https://www.cps.sp.gov.br/fatecs/fatec-itaquaquecetuba/" target="_blank" class="lista-local">Fatec</a>
+              <p class="lista-descricao">
+                - O curso aborda disciplinas das áreas de informática e gestão, que têm como base a matemática. Dentro de computação, o estudante aprende linguagem de programação, desenvolvimento de softwares e implementação de sistema de banco de dados, entre outros.
               </p>
             </li>
           </ul>
@@ -74,24 +74,24 @@
       </article>
     </section>
 
-    <section id="portifolio">
-      <article>
+    <section class="principal" id="portifolio">
+      <article class="container article-lista">
         <div>
-          <h3>Blog</h3>
+          <h3 class="topico-principal">Licenças e certificados</h3>
         </div>
-        <div>
+        <div class="lista-item">
           <ul>
             <li>
-              <p>Mulheres que fazem história</p>
-              <p>Revelo</p>
-              <a href="https://community.revelo.io/27-desenvolvedoras-brasileiras-para-se-inspirar-em-2022/" target="_blank"> 27 desenvolvedoras brasileiras para se inspirar em 2022</a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+              <p class="lista-titulo">Salesforce Certified Administrator</p>
+              <p class="lista-descricao">Salesforce</p>
             </li>
             <li>
-              <p>Relatório de impacto</p>
-              <p>Pretalab</p>
-              <a href="https://relatoriodeimpacto.pretalab.com/" target="_blank">Objetivos de Desenvolvimento Sustentável (ODS) da ONU no Brasil.</a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. for clients and indoor purposes.</p>
+              <p class="lista-titulo">Lógica de programação - Os primeiros programas com JavaScript e HTML</p>
+              <p class="lista-descricao">Alura</p>
+            </li>
+            <li>
+              <p class="lista-titulo">Algoritmo e lógica de programação</p>
+              <p class="lista-descricao">Udemy</p>
             </li>
           </ul>
         </div>
@@ -100,14 +100,16 @@
   </main>
 
   <!-- rodapé da nossa página, visível ao usuário -->
-  <footer id="contato">
-    <div>
-      <ul>
-        <li><i class="fas fa-envelope-square"></i><a href="mailto:amanda.adgti@gmail.com">Enviar e-mail</a></li>
-        <li href=""><i class="fab fa-linkedin"></i>amanda-silva</li>
-        <li href=""><i class="fab fa-github-square"></i>asilvaodev</li>
+  <footer class="rodape" id="contato">
+    <div class="container">
+      <ul class="lista-rodape">
+        <li><i class="fas fa-envelope-square estilo-icone"></i><a href="mailto:paula.lvieiras@gmail.com" class="links">Enviar e-mail</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/paula-lima-b61a16192/"target="_blank" class="links"><i class="fab fa-linkedin estilo-icone"></i>paula-lima</a></li>
+        <li>
+          <a href="https://github.com/PaulaLSilva"target="_blank" class="links"><i class="fab fa-github-square estilo-icone"></i>PaulaLSilva</a></li>
       </ul>
-      <a href="#minhaNav">Volte ao topo</a>
+      <a href="#minhaNav" class="links">Volte ao topo</a>
     </div>
   </footer>
 

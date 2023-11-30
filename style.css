@@ -9,18 +9,21 @@
   }
   body{
       font-family: roboto, sans-serif;
+      margin: 0;
+      
   }
   li{
     list-style: none;
   }
   .header-menu{
+  /* // Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
       display: flex;
-      position: fixed;
-      width: 100%;
-      padding: 8px;
-      padding-top: 32px;
-      padding-bottom: 32px;
-      height: 60px;
+      position: fixed; /*Deixa o nosso header fixo*/
+      width: 100%; /*Largura*/
+      padding: 8px; /*Espaçamento dos 4 lados*/
+      padding-bottom: 32px; /*Espaçamento inferior*/
+      padding-top: 32px;/*Espaçamento superior*/
+      height: 60px; /*Altura*/
       background: rgb(230, 53, 203);
   }
   .header-menu nav {
@@ -29,6 +32,7 @@
       width: 100%;
 
   }
+  /*Formacao - Portfolio - Contatos*/
   .lista-menu li>a {
     color: #fff;
     font-size: 18px;
@@ -36,30 +40,34 @@
   }
   .lista-menu {
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    align-items: center;
+    justify-content: space-evenly; /*Espaçamento entre eles seja igual*/
+    width: 50%; /*Largura*/
+    align-items: center; /*Posicionando no centro*/
   }
   .principal {
-    height: 100vh;
+    height: 150vh; /*Altura*/
     display: flex;
     background-color: #eaeaee;
   }
   .sub-container-principal {
+  /*display, flex-direction e justify content são elementos do flexbox que em conjunto, alinham nossos itens*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+  /* O container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
+Ele pode definir as margens laterais da página, ou deixar sem margens e, também, posiciona o conteúdo no
+centro do browser. O container é invisível. */
   .container {
-    margin-right: auto;
+    margin-right: auto; /*uma margem automática para todos os lados  */
     margin-left: auto;
-    margin-top: 75px;
-    max-width: 960px;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 100%;
+    margin-top: 75px; /*Margem para cima*/
+    max-width: 960px; /*largura maxima*/
+    padding-right: 10px; /* Espaçamento direito*/
+    padding-left: 10px; /*Espaçamento esquerdo*/
+    width: 100%; /*largura*/
   }
   .nome-completo {
     font-size: 36px;
@@ -69,11 +77,13 @@
   }
   .profissao {
     color: #c6b5d5;
-    height: 60px;
+    height: 100px;
   }
   .texto-sobre {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 32px; /*Espaçamento entre as linhas*/
+    text-align:justify;
+    
   }
   .article-lista {
     display: flex;
@@ -82,17 +92,67 @@
     margin-bottom: 100px;
   }
   .topico-principal {
-    font-size: 20px;
+    font-size: 36px;
     color: #ff4dbc;
   }
   .lista-item {
     padding: 32px;
   }
+  .lista-item ul li {
+    margin-bottom: 32px;  /*espaçamento entre os items da nossa lista*/
+  }
+  .lista-titulo{
+    margin-bottom: 5px; 
+    font-size: 22px;
+    color: #661e4b;
+    font-weight: 700;
+   }
+   
+   .lista-local{
+     font-size: 18px;
+     color: #2F80ED;
+     
+   }
+   
+   .lista-descricao {
+     font-size: 18px;
+     margin-top: 5px;
+     line-height: 20px; /*Espaçamento entre as linhas*/
+     color: #828282;
+     font-weight: 300;
+   }
+   
+   .rodape{
+     background-color: #724796;
+     height: 300px;
+     display: flex;
+     align-items: center;
+   }
+   
+   .links{
+     color: #FFF; 
+     text-decoration: none;
+   }
+   
+   .lista-rodape li{
+     color: #FFF;
+     font-weight: 700;
+     font-size: 18px;
+     margin-bottom: 16px;
+     display: flex;
+     align-items: center;
+   }
+   
+   .estilo-icone{
+    font-size: 32px;
+    margin-right: 10px;
+   }
   .foto {
     margin-right: auto;
     margin-left: auto;
     padding-right: 10px;
     padding-left: 10px;
-    margin-top: 75px;
-    max-width: 90px;
+    margin-top: 85px;
+    max-width: 150px;
+    border-radius: 50px;
   }
